@@ -6,10 +6,10 @@ var CLOUD_X = 100;
 var CLOUD_Y = 10;
 var GAP = 10;
 var FONT_GAP = 20;
-var DISTANCE_BETWEEN_BAR = 50;  // расстояние между колонок
+var DISTANCE_BETWEEN_BAR = 50; // расстояние между колонок
 var BAR_WIDHT = 40;
-var stepBetweenGap = DISTANCE_BETWEEN_BAR + BAR_WIDHT;  // шаг построение колонок
-var maxBarHight = CLOUD_HEIGHT - GAP * 2 - FONT_GAP * 5;  // максимальная высота колонки
+var stepBetweenGap = DISTANCE_BETWEEN_BAR + BAR_WIDHT; // шаг построение колонок
+var maxBarHight = CLOUD_HEIGHT - GAP * 2 - FONT_GAP * 5; // максимальная высота колонки
 
 
 var renderCloud = function (ctx, x, y, color) {
