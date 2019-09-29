@@ -30,8 +30,6 @@ var getMaxElement = function (arr) {
   return maxElement;
 };
 
-var players = ['Пендальф', 'Вы', 'Алатар', 'Паландо'];
-
 var renderBar = function (ctx, player, timePlayer, numberBar, maxTimePlayer) {
   ctx.fillStyle = TEXT_COLOR;
   ctx.fillText(player, CLOUD_X + BAR_WIDHT + stepBetweenGap * numberBar, CLOUD_Y * 26);
