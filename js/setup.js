@@ -67,11 +67,11 @@ var playerStyleCreation = function (N) {
   shuffleArr(WIZARD_EYES_COLORS);
 
   for (var i = 0; i <= N; i++) {
-  wizards.unshift({
-    name: WIZARD_NAMES[i] + ' ' + WIZARD_SURNAMES[i],
-    coatColor: WIZARD_COAT_COLORS[i],
-    eyesColor: WIZARD_EYES_COLORS[i]
-  });
+    wizards.unshift({
+      name: WIZARD_NAMES[i] + ' ' + WIZARD_SURNAMES[i],
+      coatColor: WIZARD_COAT_COLORS[i],
+      eyesColor: WIZARD_EYES_COLORS[i]
+    });
   }
   return wizards;
 };
