@@ -93,8 +93,8 @@ var drawingElement = function (array) {
   var fragment = document.createDocumentFragment();
   for (var i = 0; i < array.length; i++) {
     fragment.appendChild(renderWizard(array[i]));
-  };
-similarListElement.appendChild(fragment);
+  }
+  similarListElement.appendChild(fragment);
 };
 
 drawingElement(wizards);
