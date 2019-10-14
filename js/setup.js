@@ -42,8 +42,11 @@ var WIZARD_EYES_COLORS = [
 var NUMBER_PLAYERS_SHOWN = 4;
 var wizards = [];
 
-var userDialog = document.querySelector('.setup');
-userDialog.classList.remove('hidden');
+var removeClass = function (selector, classSelector) {
+  document.querySelector(selector).classList.remove(classSelector);
+};
+
+removeClass('.setup', 'hidden');
 
 var similarListElement = document.querySelector('.setup-similar-list');
 
@@ -61,13 +64,13 @@ var shuffleArr = function (arr) {
   return arr;
 };
 
-var playerStyleCreation = function (N) {
+var playerStyleCreation = function (quantityPlayers) {
   shuffleArr(WIZARD_NAMES);
   shuffleArr(WIZARD_SURNAMES);
   shuffleArr(WIZARD_COAT_COLORS);
   shuffleArr(WIZARD_EYES_COLORS);
 
-  for (var i = 0; i < N; i++) {
+  for (var i = 0; i < quantityPlayers; i++) {
     wizards.unshift({
       name: WIZARD_NAMES[i] + ' ' + WIZARD_SURNAMES[i],
       coatColor: WIZARD_COAT_COLORS[i],
@@ -98,4 +101,4 @@ var drawingElement = function (array) {
 };
 
 drawingElement(wizards);
-userDialog.querySelector('.setup-similar').classList.remove('hidden');
+removeClass('.setup-similar', 'hidden');
